@@ -1,0 +1,64 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="LuxCalc.Beam"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="LUX CALC" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="beam calcs" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="12,0,0,0" Name="textBlock1" Text="Beam diameter (units)" VerticalAlignment="Top" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="0,22,0,0" Name="tbDiameter" Text="" VerticalAlignment="Top" Width="450" InputScope="Number" SelectionChanged="tbDiameter_SelectionChanged" />
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="12,100,0,0" Name="textBlock2" Text="Beam angle (deg)" VerticalAlignment="Top" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="0,122,0,0" Name="tbAngle" Text="" VerticalAlignment="Top" Width="450" InputScope="Number" SelectionChanged="tbAngle_SelectionChanged" />
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="12,200,0,0" Name="textBlock3" Text="Throw (units)" VerticalAlignment="Top" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="0,222,0,0" Name="tbThrow" Text="" VerticalAlignment="Top" Width="450" InputScope="Number" SelectionChanged="tbThrow_SelectionChanged" />
+            <Button Content="Calculate" Height="72" HorizontalAlignment="Left" Margin="147,529,0,0" Name="btnCalculate" VerticalAlignment="Top" Width="160" Click="btnCalculate_Click" IsEnabled="False" />
+            <TextBlock Height="20" HorizontalAlignment="Left" Margin="214,4,0,0" Name="tbDiameterMsg" Text="" VerticalAlignment="Top" FontSize="16" Foreground="Red" Width="236" />
+            <TextBlock FontSize="16" Foreground="Red" Height="20" HorizontalAlignment="Right" Margin="0,104,6,0" Name="tbAngleMsg" Text="" VerticalAlignment="Top" Width="277" />
+            <TextBlock FontSize="16" Foreground="Red" Height="20" HorizontalAlignment="Left" Margin="133,205,0,0" Name="tbThrowMsg" Text="" VerticalAlignment="Top" Width="317" />
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="6,499,0,0" Name="tbCalculateMsg" Text="Specify any 2 values (top only or bottom only)." VerticalAlignment="Top" Width="444" TextAlignment="Center" Foreground="Green" />
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="12,300,0,0" Name="lbAnswer" Text="Answer" VerticalAlignment="Top" Width="71" />
+            <TextBlock FontSize="18" Foreground="LimeGreen" Height="25" HorizontalAlignment="Left" Margin="89,303,0,0" Name="tbAnswerMsg" Text="" VerticalAlignment="Top" Width="297" />
+            <TextBlock FontSize="48" Foreground="DodgerBlue" Height="66" HorizontalAlignment="Left" Margin="12,336,0,0" Name="tbAnswer" Text="" VerticalAlignment="Top" Width="425" />
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="12,408,0,0" Name="textBlock4" Text="Horizontal Dist (units)" VerticalAlignment="Top" />
+            <TextBox Height="72" HorizontalAlignment="Left" InputScope="Number" Margin="0,430,0,0" Name="tbHorizontal" Text="" VerticalAlignment="Top" Width="231" TextChanged="tbHorizontal_TextChanged" />
+            <TextBox Height="72" HorizontalAlignment="Left" InputScope="Number" Margin="225,430,0,0" Name="tbVertical" Text="" VerticalAlignment="Top" Width="231" TextChanged="tbVertical_TextChanged" />
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="239,408,0,0" Name="textBlock5" Text="Vertical Dist (units)" VerticalAlignment="Top" />
+        </Grid>
+    </Grid>
+ 
+    <!--Sample code showing usage of ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>
