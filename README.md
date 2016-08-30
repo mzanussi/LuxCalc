@@ -14,6 +14,8 @@ Please feel free to contact us with suggestions for additional features or impro
 
 Version History:
 
+1.1.0.1 -- Administrative update.
+
 1.1.0.0 -- Added voltage drop and wire resistance calculations. Re-targeted for Windows Phone Silverlight 8.1.
 
 1.0.0.0 -- Original Windows Phone 7 submission.
