@@ -28,23 +28,12 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <Image Height="48" HorizontalAlignment="Left" Margin="206,502,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="48" Source="/LuxCalc;component/images/About.png" Tap="image1_Tap" />
-            <Button Content="Beam Calculations" Height="145" HorizontalAlignment="Left" Margin="0,157,0,0" Name="btnBeam" VerticalAlignment="Top" Width="456" FontSize="48" Click="btnBeam_Click" BorderBrush="LightSteelBlue" Foreground="LightSteelBlue" />
-            <Button Content="Power Formula" FontSize="48" Height="145" HorizontalAlignment="Left" Margin="0,6,0,0" Name="btnPower" VerticalAlignment="Top" Width="456" Click="btnPower_Click" BorderBrush="LightSteelBlue" Foreground="LightSteelBlue" />
-            <Button Content="Conversions" FontSize="48" Height="145" HorizontalAlignment="Left" Margin="0,308,0,0" Name="btnConversions" VerticalAlignment="Top" Width="456" Click="btnConversions_Click" Foreground="LightSteelBlue" BorderBrush="LightSteelBlue" Background="Transparent" />
+            <Image Height="48" HorizontalAlignment="Left" Margin="206,502,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="48" Source="/Assets/About.png" Tap="image1_Tap" />
+            <Button Content="Power Formula" FontSize="46" Height="110" HorizontalAlignment="Left" Margin="0,6,0,0" Name="btnPower" VerticalAlignment="Top" Width="456" Click="btnPower_Click" BorderBrush="LightSteelBlue" Foreground="LightSteelBlue" />
+            <Button Content="Beam Calculations" FontSize="46" Height="110" HorizontalAlignment="Left" Margin="0,116,0,0" Name="btnBeam" VerticalAlignment="Top" Width="456" Click="btnBeam_Click" BorderBrush="LightSteelBlue" Foreground="LightSteelBlue" />
+            <Button Content="Conversions" FontSize="46" Height="110" HorizontalAlignment="Left" Margin="0,226,0,0" Name="btnConversions" VerticalAlignment="Top" Width="456" Click="btnConversions_Click" Foreground="LightSteelBlue" BorderBrush="LightSteelBlue" Background="Transparent" />
+            <Button Content="Voltage Drop" FontSize="46" Height="110" HorizontalAlignment="Left" Margin="0,336,0,0" Name="btnVoltageDrop" VerticalAlignment="Top" Width="456" Click="btnVoltageDrop_Click" Foreground="LightSteelBlue" BorderBrush="LightSteelBlue" Background="Transparent" />
         </Grid>
     </Grid>
  
-    <!--Sample code showing usage of ApplicationBar-->
-    <!--<phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
-            <shell:ApplicationBar.MenuItems>
-                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
-                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
-            </shell:ApplicationBar.MenuItems>
-        </shell:ApplicationBar>
-    </phone:PhoneApplicationPage.ApplicationBar>-->
-
 </phone:PhoneApplicationPage>

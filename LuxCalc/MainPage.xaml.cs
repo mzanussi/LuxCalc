@@ -40,5 +40,10 @@ namespace LuxCalc
         {
             NavigationService.Navigate(new Uri("/About.xaml", UriKind.Relative));
         }
+
+        private void btnVoltageDrop_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/VoltageDrop.xaml", UriKind.Relative));
+        }
     }
 }
