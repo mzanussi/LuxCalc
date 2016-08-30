@@ -27,26 +27,12 @@
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBlock Height="30" HorizontalAlignment="Left" Margin="295,69,0,0" Name="txtVersion" Text="version" VerticalAlignment="Top" Width="155" Foreground="Sienna" TextAlignment="Right" />
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,10,12,0">
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="248,69,0,0" Name="txtVersion" Text="version" VerticalAlignment="Top" Width="202" Foreground="Sienna" />
             <TextBlock Height="93" HorizontalAlignment="Left" Margin="9,22,0,0" Name="textBlock1" Text="Lux Calc" VerticalAlignment="Top" FontSize="64" Width="280" Foreground="Firebrick" />
-            <TextBlock Height="27" HorizontalAlignment="Left" Margin="6,0,0,0" Name="textBlock2" Text="A Squeal Bark Productions production:" VerticalAlignment="Top" TextWrapping="NoWrap" Width="438" FontSize="16" TextAlignment="Center" />
-            <TextBlock Height="30" HorizontalAlignment="Left" Margin="12,112,0,0" Name="textBlock3" Text="www.squealbark.com" VerticalAlignment="Top" Foreground="Wheat" />
-            <TextBlock Foreground="Wheat" Height="30" HorizontalAlignment="Left" Margin="236,112,0,0" Name="textBlock4" Text="admin@squealbark.com" VerticalAlignment="Top" />
-            <Image HorizontalAlignment="Left" Margin="130,161,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Source="/LuxCalc;component/images/AboutPageImage.jpg" Height="320" Width="192" />
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="15,112,0,0" x:Name="textBlock2" Text="Copyright © 2012-2016 Michael Zanussi" VerticalAlignment="Top" Foreground="Wheat" />
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="15,147,0,0" Name="textBlock3" Text="iosdevx@outlook.com" VerticalAlignment="Top" Foreground="Wheat" />
         </Grid>
     </Grid>
- 
-    <!--Sample code showing usage of ApplicationBar-->
-    <!--<phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
-            <shell:ApplicationBar.MenuItems>
-                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
-                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
-            </shell:ApplicationBar.MenuItems>
-        </shell:ApplicationBar>
-    </phone:PhoneApplicationPage.ApplicationBar>-->
 
 </phone:PhoneApplicationPage>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
+  <Identity Name="63278SquealBarkProduction.LuxCalc" Publisher="CN=B58F0304-9AB0-403D-B5A3-74A44A31D7DC" Version="1.1.0.0" />
+  <mp:PhoneIdentity PhoneProductId="a333ccde-8454-49ed-9fc6-f2a76f76959a" PhonePublisherId="af87e29f-ced3-41bf-b1cd-a3dc80e584b8" />
+  <Properties>
+    <DisplayName>LuxCalc</DisplayName>
+    <PublisherDisplayName>Squeal Bark Productions</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.1</OSMinVersion>
+    <OSMaxVersionTested>6.3.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="xa333ccdey8454y49edy9fc6yf2a76f76959ax" Executable="AGHost.exe" EntryPoint="MainPage.xaml">
+      <m3:VisualElements DisplayName="LuxCalc" Square150x150Logo="Assets\SquareTile150x150.png" Square44x44Logo="Assets\Logo.png" Description="LuxCalc" ForegroundText="light" BackgroundColor="#464646">
+        <m3:DefaultTile Square71x71Logo="Assets\SquareTile71x71.png">
+        </m3:DefaultTile>
+        <m3:SplashScreen Image="SplashScreenImage.png" />
+      </m3:VisualElements>
+      <Extensions>
+        <Extension Category="windows.backgroundTasks" EntryPoint="AgHost.BackgroundTask">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />
+          </BackgroundTasks>
+        </Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Extensions>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>AgHostSvcs.dll</Path>
+        <ActivatableClass ActivatableClassId="AgHost.BackgroundTask" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+  </Extensions>
+</Package>

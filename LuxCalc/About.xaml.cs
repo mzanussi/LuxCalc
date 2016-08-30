@@ -25,7 +25,7 @@ namespace LuxCalc
         private void Display()
         {
             string str = Assembly.GetExecutingAssembly().FullName;
-            txtVersion.Text = "version " + str.Split('=')[1].Split(',')[0];
+            txtVersion.Text = "v" + str.Split('=')[1].Split(',')[0] + " (8/27/2016)";
         }
     }
 }
