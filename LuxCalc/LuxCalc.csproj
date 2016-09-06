@@ -114,6 +114,9 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="OhmsLaw.xaml.cs">
+      <DependentUpon>OhmsLaw.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Power.xaml.cs">
       <DependentUpon>Power.xaml</DependentUpon>
     </Compile>
@@ -140,6 +143,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OhmsLaw.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -130,6 +130,8 @@ namespace LuxCalc
         public string ConversionsAnswer = "";
         public string VoltageDropAnswerMsg = "";
         public string VoltageDropAnswer = "";
+        public string OhmsAnswerMsg = "";
+        public string OhmsAnswer = "";
         public string Diameter = "";
         public string Angle = "";
         public string Throw = "";
@@ -140,6 +142,9 @@ namespace LuxCalc
         public string VoltageDropCurrent = "";
         public string VoltageDropConductorLength = "";
         public string VoltageDropAwg = "";
+        public string OVolts = "";
+        public string OAmps = "";
+        public string Ohms = "";
 
         private void SaveToStateObject()
         {
@@ -154,6 +159,8 @@ namespace LuxCalc
             SaveTextToStateObject("ConversionsAnswer", ConversionsAnswer);
             SaveTextToStateObject("VoltageDropAnswerMsg", VoltageDropAnswerMsg);
             SaveTextToStateObject("VoltageDropAnswer", VoltageDropAnswer);
+            SaveTextToStateObject("OhmsAnswerMsg", OhmsAnswerMsg);
+            SaveTextToStateObject("OhmsAnswer", OhmsAnswer);
             SaveTextToStateObject("Diameter", Diameter);
             SaveTextToStateObject("Angle", Angle);
             SaveTextToStateObject("Throw", Throw);
@@ -164,6 +171,9 @@ namespace LuxCalc
             SaveTextToStateObject("VoltageDropCurrent", VoltageDropCurrent);
             SaveTextToStateObject("VoltageDropConductorLength", VoltageDropConductorLength);
             SaveTextToStateObject("VoltageDropAwg", VoltageDropAwg);
+            SaveTextToStateObject("OVolts", OVolts);
+            SaveTextToStateObject("OAmps", OAmps);
+            SaveTextToStateObject("Ohms", Ohms);
         }
 
         private void LoadFromStateObject()
@@ -179,6 +189,8 @@ namespace LuxCalc
             LoadTextFromStateObject("ConversionsAnswer", out ConversionsAnswer);
             LoadTextFromStateObject("VoltageDropAnswerMsg", out VoltageDropAnswerMsg);
             LoadTextFromStateObject("VoltageDropAnswer", out VoltageDropAnswer);
+            LoadTextFromStateObject("OhmsAnswerMsg", out OhmsAnswerMsg);
+            LoadTextFromStateObject("OhmsAnswer", out OhmsAnswer);
             LoadTextFromStateObject("Diameter", out Diameter);
             LoadTextFromStateObject("Angle", out Angle);
             LoadTextFromStateObject("Throw", out Throw);
@@ -189,6 +201,9 @@ namespace LuxCalc
             LoadTextFromStateObject("VoltageDropCurrent", out VoltageDropCurrent);
             LoadTextFromStateObject("VoltageDropConductorLength", out VoltageDropConductorLength);
             LoadTextFromStateObject("VoltageDropAwg", out VoltageDropAwg);
+            LoadTextFromStateObject("OVolts", out OVolts);
+            LoadTextFromStateObject("OAmps", out OAmps);
+            LoadTextFromStateObject("Ohms", out Ohms);
         }
 
         private void SaveTextToStateObject(string filename, string text)

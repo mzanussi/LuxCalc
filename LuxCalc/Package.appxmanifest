@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="63278SquealBarkProduction.LuxCalc" Publisher="CN=B58F0304-9AB0-403D-B5A3-74A44A31D7DC" Version="1.1.0.1" />
+  <Identity Name="63278SquealBarkProduction.LuxCalc" Publisher="CN=B58F0304-9AB0-403D-B5A3-74A44A31D7DC" Version="1.2.0.0" />
   <mp:PhoneIdentity PhoneProductId="a333ccde-8454-49ed-9fc6-f2a76f76959a" PhonePublisherId="af87e29f-ced3-41bf-b1cd-a3dc80e584b8" />
   <Properties>
     <DisplayName>LuxCalc</DisplayName>

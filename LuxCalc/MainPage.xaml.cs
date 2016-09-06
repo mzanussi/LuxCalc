@@ -45,5 +45,10 @@ namespace LuxCalc
         {
             NavigationService.Navigate(new Uri("/VoltageDrop.xaml", UriKind.Relative));
         }
+
+        private void btnOhmsLaw_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/OhmsLaw.xaml", UriKind.Relative));
+        }
     }
 }

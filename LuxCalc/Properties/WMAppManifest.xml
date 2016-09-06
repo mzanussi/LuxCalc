@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2014/deployment" AppPlatformVersion="8.1">
   <DefaultLanguage xmlns="" code="" />
-  <App xmlns="" ProductID="{a333ccde-8454-49ed-9fc6-f2a76f76959a}" Title="Lux Calc" RuntimeType="Silverlight" Version="1.1.0.1" Genre="apps.normal" Author="Michael Zanussi" Description="Lux Calc provides the stage or screen lighting technician with an easy-to-use and handy lighting calculator at his or her fingertips." Publisher="Michael Zanussi" PublisherID="{af87e29f-ced3-41bf-b1cd-a3dc80e584b8}">
+  <App xmlns="" ProductID="{a333ccde-8454-49ed-9fc6-f2a76f76959a}" Title="Lux Calc" RuntimeType="Silverlight" Version="1.2.0.0" Genre="apps.normal" Author="Michael Zanussi" Description="Lux Calc provides the stage or screen lighting technician with an easy-to-use and handy lighting calculator at his or her fingertips." Publisher="Michael Zanussi" PublisherID="{af87e29f-ced3-41bf-b1cd-a3dc80e584b8}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
     <Capabilities>
     </Capabilities>
