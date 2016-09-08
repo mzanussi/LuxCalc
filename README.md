@@ -16,6 +16,8 @@ Please feel free to contact us with suggestions for additional features or impro
 
 Version History:
 
+1.2.0.1 -- Administrative update.
+
 1.2.0.0 -- Added Ohm's Law calculation.
 
 1.1.0.1 -- Administrative update.

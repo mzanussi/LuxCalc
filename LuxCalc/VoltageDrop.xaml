@@ -41,7 +41,7 @@
             <TextBlock FontSize="48" Foreground="DodgerBlue" Height="66" HorizontalAlignment="Left" Margin="12,349,0,0" Name="tbAnswer" Text="" VerticalAlignment="Top" Width="425" />
             <Slider x:Name="slAwg" HorizontalAlignment="Left" Margin="12,229,0,0" VerticalAlignment="Top" Width="425" Maximum="22" Minimum="0" Value="12" ValueChanged="slAwg_ValueChanged" Loaded="slAwg_Loaded"/>
             <TextBlock Height="30" HorizontalAlignment="Left" Margin="12,199,0,0" x:Name="lbAwg" Text="AWG" VerticalAlignment="Top" />
-            <TextBlock FontSize="20" Foreground="Red" Height="28" HorizontalAlignment="Left" Margin="77,198,0,0" x:Name="lbAwgMsg" Text="" VerticalAlignment="Top" Width="360" />
+            <TextBlock FontSize="20" Foreground="LimeGreen" Height="28" HorizontalAlignment="Left" Margin="77,198,0,0" x:Name="lbAwgMsg" Text="" VerticalAlignment="Top" Width="360" />
         </Grid>
     </Grid>
 
